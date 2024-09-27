@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+    cursor: url('Image/Target-icon.png'), text;
+    overflow: hidden;
+}
+
+body:before {
+    content: '';
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('Image/532.png') no-repeat bottom left;
+}
+
+@keyframes dauckfly {
+    0% {
+        left: 80%;
+        top: 50%;
+    }
+    25% {
+        left: 100%;
+        top: 30%;
+    } 
+    50% {
+        left: 50%;
+        top: 30%;
+    }
+    75% {
+        left: 0%;
+        top: 50%;
+    }
+    100% {
+        left: -20%;
+        top: 10%;
+    }
+}
+
+input {
+    display: none;
+}
+
+input + label {
+    position: absolute;
+    left: -100px;
+    z-index: 1;
+    width: 36px;
+    height: 34px;
+    display: block;
+    transform: translate(-50%, -50%);
+    background: url('Image/flying-bird_pink.png') no-repeat left center;
+    background-size: contain; 
+}
+
+input:checked + label {
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotate(120deg);
+    transform-origin: 60%;
+    z-index: -5;
+}
+
+.duck:nth-last-of-type(1) {
+    animation: dauckfly 10s linear 1s infinite;
+}
+
+.duck:nth-last-of-type(2) {
+    animation: dauckfly 12s linear 2s infinite;
+}
+
+.duck:nth-last-of-type(3) {
+    animation: dauckfly 15s linear 3s infinite;
+}
+
+.duck:nth-last-of-type(4) {
+    animation: dauckfly 18s linear 4s infinite;
+}
+
+.duck:nth-last-of-type(5) {
+    animation: dauckfly 20s linear 5s infinite;
+}
+
+.score {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #dadada;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+}
+
+.score:after {
+    content: counter(score);
+    display: inline-block;
+}
+
+.score:before {
+    content: 'Score: ';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input:checked {
+    counter-increment: score;
+}
+
+body {
+    counter-reset: score;
+}

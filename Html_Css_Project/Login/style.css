@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Image/pxfuel.jpg); 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+
+.logo {
+    width: 100px; 
+    margin-bottom: 20px;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    color: #c4c4c4;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+.submit12{
+    width: 100%;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color:#007BFF; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a5476;
+}
+
+p {
+    margin-top: 10px;
+    color: #000000;
+}
+
+p a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

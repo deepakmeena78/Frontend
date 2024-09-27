@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        #ee{
+            height: 50px;
+            width: 50px;
+            background-color: cornflowerblue;
+            border-radius: 36px;
+            border: 2px solid black;
+            position: relative;
+            display: inline;
+            padding: 69px;
+            top: 350px;
+            left: 450px;
+            margin: 30px;
+        }        
+        .dd1:hover{
+            transition : all 0.5 ease-in;
+            transform: scale(0.5);
+        }
+        .dd2:hover{
+            transition : all 0.5 ease-in;
+            transform: rotate(0.5);
+        }
+        .dd3:hover{
+            transition : all 0.5 ease-in-out 0.5s;
+            transform: rotate(1s);
+        }
+        .dd4:hover{
+            transition : all 0.5 ease-in;
+            transform: scale(0.5);
+        }
+    </style>
+    </head>
+    <body>
+        <div id="ee" class="dd1">Bos1</div>
+        <div id="ee" class="dd2">Bos2</div>
+        <div id="ee" class="dd3">Bos3</div>
+        <div id="ee" class="dd4">Bos4</div>
+    </body>
+</html>

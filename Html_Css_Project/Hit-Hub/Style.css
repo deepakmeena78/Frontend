@@ -1,0 +1,19 @@
+h1{
+    border: 0;
+    text-align: center;
+    border-top: 2x solid 140;
+    width: 50%;
+    margin: 20px auto;
+    color: rgb(36, 57, 52);
+}
+h4{
+    border: 0;
+    border-top: 3x solid 140;
+    width: 50%;
+    margin: 20px auto;
+    color: rgb(36, 57, 52);
+}
+#cat{
+    height: 23px;
+    display: inline-block;
+}

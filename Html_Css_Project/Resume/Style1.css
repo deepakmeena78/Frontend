@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.pop {
+  display: flex;
+}
+.resume {
+  text-align: center;
+}
+.pop {
+  margin: 5px;
+  display: flex;
+  background-color: rgb(99, 116, 133);
+  height: 230px;
+  width: 1080px;
+  color: white;
+}
+.link {
+  margin-left: 350px;
+  margin-top: 150px;
+}
+.total {
+  width: 1200px;
+}
+.mobile {
+  margin: 10px;
+  margin-top: 120px;
+}
+.deepak {
+  margin: 10px;
+  width: 400px;
+}
+.smry {
+  color: rgb(99, 116, 133);
+  background-color: white;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.skill{
+  height: 30px;
+}
+.skill h3{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.skilltools{
+  margin-top: 90px;
+  margin-left: 20px;
+  margin: 20px;
+}
+
